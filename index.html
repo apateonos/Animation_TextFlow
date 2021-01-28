@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Animation for vanilla javascript</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section>
+      <div class="text">
+        <h2 style="--i:0.3"><span>Super Text</span><span>Super Text</span><span>Super Text</span>
+        <span>Super Text</span><span>Super Text</span><span>Super Text</span>
+        <span>Super Text</span><span>Super Text</span><span>Super Text</span></h2>
+        <h2 style="--i:0.6"><span>Super Text</span><span>Super Text</span><span>Super Text</span>
+        <span>Super Text</span><span>Super Text</span><span>Super Text</span>
+        <span>Super Text</span><span>Super Text</span><span>Super Text</span></h2>
+        <h2 style="--i:0.9"><span>Super Text</span><span>Super Text</span><span>Super Text</span>
+        <span>Super Text</span><span>Super Text</span><span>Super Text</span>
+        <span>Super Text</span><span>Super Text</span><span>Super Text</span></h2>
+        <h2 style="--i:1.2"><span>Super Text</span><span>Super Text</span><span>Super Text</span>
+        <span>Super Text</span><span>Super Text</span><span>Super Text</span>
+        <span>Super Text</span><span>Super Text</span><span>Super Text</span></h2>
+        <h2 style="--i:1.5"><span>Super Text</span><span>Super Text</span><span>Super Text</span>
+        <span>Super Text</span><span>Super Text</span><span>Super Text</span>
+        <span>Super Text</span><span>Super Text</span><span>Super Text</span></h2>
+        <h2 style="--i:1.8"><span>Super Text</span><span>Super Text</span><span>Super Text</span>
+        <span>Super Text</span><span>Super Text</span><span>Super Text</span>
+        <span>Super Text</span><span>Super Text</span><span>Super Text</span></h2>
+        <h2 style="--i:2.1"><span>Super Text</span><span>Super Text</span><span>Super Text</span>
+        <span>Super Text</span><span>Super Text</span><span>Super Text</span>
+        <span>Super Text</span><span>Super Text</span><span>Super Text</span></h2>
+        <h2 style="--i:2.4"><span>Super Text</span><span>Super Text</span><span>Super Text</span>
+        <span>Super Text</span><span>Super Text</span><span>Super Text</span>
+        <span>Super Text</span><span>Super Text</span><span>Super Text</span></h2>
+        <h2 style="--i:2.7"><span>Super Text</span><span>Super Text</span><span>Super Text</span>
+        <span>Super Text</span><span>Super Text</span><span>Super Text</span>
+        <span>Super Text</span><span>Super Text</span><span>Super Text</span></h2>  
+      </div>
+    </section>
+    <script>
+      const position = document.documentElement;
+      position.addEventListener("mousemove", e => {
+        position.style.setProperty('--x', e.clientX + 'px');
+      });
+    </script>
+  </body>
+</html>
